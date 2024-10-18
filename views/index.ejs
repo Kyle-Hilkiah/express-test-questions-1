@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+            <title>Input validation</title>
+    </head>
+    <body>
+        <!--Question 1 index form-->
+       <!-- 
+        <form action="/submit" method="post">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br><br>
+
+            <label for="grade">Grade: </label>
+            <input type="text"  id="grade" name="grade"><br><br><br>
+
+            <button type="submit">Submit</button>
+        </form>-->
+        <!-- Question 2 index form-->
+        <form action="/register" method="post"> 
+            <label for="username"> Username</label>
+            <input name="username" id="username" required/><br><br>
+            <label for="password"> Password</label>
+            <input name="password" id="password" required/><br><br>
+            <label for="confirmed"> Confirm Password</label>
+            <input type="text" name="confirmed" id="confirmed" required/><br><br>
+            <button type="submit"> Register</button>
+        </form>
+        <% if (error){ %>
+            <p style="color: red;"> <%= error %></p>
+        <% } %>
+
+    </body>
+</html>
